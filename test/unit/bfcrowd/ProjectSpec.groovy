@@ -132,9 +132,16 @@ class ProjectSpec extends Specification {
 		
 		when:
 		def collab = new User()
-		project.getRecommendationFor()
+		Task t3 = project.getTaskFor(collab)
 		
 		then:
-		sth
+		assertTrue (t3 == t) || (t2 == t)
+		
+		when:
+		collab.skipTask(t2)
+		t3 = project.getTaskFor(collab)
+		
+		then:
+		assertFalse (t3 == t)
 	}
 }

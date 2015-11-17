@@ -75,6 +75,10 @@ class User extends grails.plugin.nimble.core.UserBase {
 		project.addCollaborator(this)
 	}
 	
+	def skipTask(Task task) {
+		
+	}
+	
 
 	//def checkBadges(User u) {
 		

@@ -84,7 +84,7 @@ class Project {
 		return true
 	}
 	
-	public Task getRecommendationFor(User u){
+	public Task getTaskFor(User u){
 		if(this.tasks) {
 			/**if (u.skippedRecom.size() == this.getRecommendations().size()) {
 				//println "Reseteando las recomendaciones"
