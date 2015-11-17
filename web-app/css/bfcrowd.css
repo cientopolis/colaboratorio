@@ -1,0 +1,44 @@
+ul.option-list {
+	list-style-type: none;
+}
+
+ul.option-list li {
+	padding: 5px;
+	font-weight: bold;
+}
+
+ul.option-list li div {
+	padding-left: 0px;
+	padding-right: 15px;
+	padding-top: 10px;
+	float: left;
+	font-size: 20px;
+}
+
+/* Base class */
+.show-component {
+  position: relative;
+  margin: 15px 0;
+  padding: 20px 19px 20px;
+  *padding-top: 19px;
+  background-color: #fff;
+  border: 6px solid #aaa;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          
+  border-radius: 6px;
+}
+
+.nav-tabs { max-width: 600px; }
+.nav-tabs-responsive { overflow: auto; }
+
+.insignia {
+	width:50px;
+	height:50px;
+	display:inline-block;
+}
+
+.row li{
+  width: 33.3%;
+  float: left;
+}
