@@ -1,0 +1,40 @@
+<head>
+   <meta name="layout" content="${grailsApplication.config.nimble.layout.administration}"/>
+   <title>
+      <g:message code="bfcrowd.label.admins.title" />
+   </title>
+   <r:script disposition='head'>
+      var adminListEndpoint = "${createLink(controller:'admins', action:'list')}";
+      var adminSearchEndpoint = "${createLink(action:'search')}";
+      var adminDeleteEndpoint = "${createLink(action:'delete')}";
+      var adminGrantEndpoint = "${createLink(action:'create')}";
+      $(function() {      
+      listAdministrators();
+      });
+   </r:script>
+</head>
+<body>
+   <h3>
+      <g:message code="bfcrowd.label.admins.header" />
+      <span><g:message code="nimble.view.admins.descriptive" /></span>      
+   </h3>
+   <div class="widget widget-heading-simple widget-body-gray">
+      <div class="widget-body">
+         <div id="admins"></div>
+      </div>
+   </div>
+   <h4>
+      <g:message code="bfcrowd.label.admins.addAdmin" />
+   </h4>
+   <p>
+      <g:message code="nimble.view.admins.addadmin.descriptive" />
+   </p>
+   <form class="form-inline well error">
+      <g:textField name="q" class="span3" />
+      <a onClick="searchAdministrators();" href="javascript:" class="btn btn-success btn-small">
+         <i class="icon-search icon-white"></i>
+         <g:message code="bfcrowd.label.admins.search" />
+      </a>
+   </form>
+   <div id="user-searchresponse" class=""> </div>
+</body>

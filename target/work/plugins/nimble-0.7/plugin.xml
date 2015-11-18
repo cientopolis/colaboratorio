@@ -1,0 +1,63 @@
+<plugin name='nimble' version='0.7' grailsVersion='2.0.1 &gt; *'>
+  <author>Sudhir Nimavat</author>
+  <authorEmail>sudhir@nimavat.me</authorEmail>
+  <title>Nimble</title>
+  <description>Nimble is an extensive application base environment for Grails.</description>
+  <documentation>http://snimavat.github.io/nimble/index.html</documentation>
+  <type>NimbleGrailsPlugin</type>
+  <resources>
+    <resource>DefaultNimbleConfig</resource>
+    <resource>NimblePluginResources</resource>
+    <resource>grails.plugin.nimble.core.AccountController</resource>
+    <resource>grails.plugin.nimble.core.AdminsController</resource>
+    <resource>grails.plugin.nimble.core.AuthController</resource>
+    <resource>grails.plugin.nimble.core.GroupController</resource>
+    <resource>grails.plugin.nimble.core.MainController</resource>
+    <resource>grails.plugin.nimble.core.RoleController</resource>
+    <resource>grails.plugin.nimble.core.UserController</resource>
+    <resource>grails.plugin.nimble.core.Group</resource>
+    <resource>grails.plugin.nimble.core.LevelPermission</resource>
+    <resource>grails.plugin.nimble.core.LoginRecord</resource>
+    <resource>grails.plugin.nimble.core.Permission</resource>
+    <resource>grails.plugin.nimble.core.ProfileBase</resource>
+    <resource>grails.plugin.nimble.core.Role</resource>
+    <resource>grails.plugin.nimble.core.Url</resource>
+    <resource>grails.plugin.nimble.core.UserBase</resource>
+    <resource>grails.plugin.nimble.core.LocalizedRealm</resource>
+    <resource>grails.plugin.nimble.core.AdminsService</resource>
+    <resource>grails.plugin.nimble.core.GroupService</resource>
+    <resource>grails.plugin.nimble.core.NimbleService</resource>
+    <resource>grails.plugin.nimble.core.PermissionService</resource>
+    <resource>grails.plugin.nimble.core.RecaptchaService</resource>
+    <resource>grails.plugin.nimble.core.RoleService</resource>
+    <resource>grails.plugin.nimble.core.UserService</resource>
+    <resource>NimbleAuthTagLib</resource>
+    <resource>NimbleInlineJSTagLib</resource>
+    <resource>NimbleTagLib</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='http://grails.org/plugins' url='http://grails.org/plugins' />
+    <repository name='http://download.java.net/maven/2/' url='http://download.java.net/maven/2/' />
+  </repositories>
+  <dependencies>
+    <compile>
+      <dependency group='net.tanesha.recaptcha4j' name='recaptcha4j' version='0.0.7' />
+    </compile>
+  </dependencies>
+  <plugins>
+    <compile>
+      <plugin group='org.grails.plugins' name='mail' version='1.0.1' />
+      <plugin group='org.grails.plugins' name='shiro' version='1.2.0' />
+    </compile>
+    <runtime>
+      <plugin group='org.grails.plugins' name='twitter-bootstrap' version='2.3.0' />
+      <plugin group='org.grails.plugins' name='resources' version='1.2' />
+      <plugin group='org.grails.plugins' name='jquery' version='1.9.0' />
+      <plugin group='org.grails.plugins' name='fields' version='1.2' />
+    </runtime>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>

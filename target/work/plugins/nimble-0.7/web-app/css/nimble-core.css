@@ -1,0 +1,145 @@
+html,body{height:100%;}
+
+body {
+    background: none repeat scroll 0 0 #f9f9f9;
+}
+ 
+
+.navbar .navbar-inner {
+	filter: none;
+    background: none repeat scroll 0 0 #6F8FAF;   
+    border-radius: 0 0 0 0;
+    border: 0;
+    border-bottom: 1px solid #507090;
+    
+
+}
+
+.navbar .brand {
+   font-size: 26px;    
+	color:#4A6784;
+	text-shadow: 1px 1px 0px #96AEC6;
+	font-weight: 700;
+    
+}
+
+#top-header .nav > li {
+	background: none repeat scroll 0 0 #8DA7C1;
+	padding-bottom: 4px;
+}
+
+#top-header .nav .profile > a, .navbar .nav .profile > a:hover {
+	color:#fff;	
+}
+
+#top-header .nav li.dropdown.open > .dropdown-toggle, 
+#top-header .nav li.dropdown.active > .dropdown-toggle, 
+#top-header .nav li.dropdown.open.active > .dropdown-toggle {
+    background: transparent;
+    color: #fff;
+}
+ .dropdown-menu {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+ }
+
+#main-container {
+	box-shadow: 0 -1px 0px #47637F;
+}
+
+#breadcrumbs {
+	background-color: #F5F5F5;
+	line-height: 39px;            
+    border-top: 1px solid #619ACA;   
+    border-bottom: 1px solid #E5E5E5;         
+    display:none;
+}
+
+#main-content {    
+    border-top: 0;
+    border-bottom: 0;    
+    border-left: 0;            
+}
+
+#sidebar {
+    background: none repeat scroll 0 0 #dddddd;
+    border:0;    
+    border-bottom: 1px solid #d5d5d5;
+    height: 100%;
+    box-shadow: 0 0px 1px #3D566F;
+    -webkit-box-shadow: 0px 0px 1px #3D566F;    
+    
+}
+
+
+#sidebar .nav-list li {        
+     border-bottom: 1px solid #cccccc;
+     box-shadow: 0 1px 0px #eeeeee;             
+}
+
+#sidebar .nav-list li a,
+#sidebar .nav-list li a:hover {
+	background: none;	
+	color: #6e6e6e;  
+	text-shadow: 1px 1px 0px #fff;
+	font-weight: 600;
+	display:inline-block;
+	padding: 11px 0 11px 26px;;
+	width: 190px;	
+}
+
+#sidebar .nav-list li > i {
+	display: none;
+}
+
+#sidebar .nav-list li.active-menu-item > i {
+	display: inline-block;
+}
+
+#sidebar .nav-list li:hover, #sidebar .nav-list li.active-menu-item {
+  background: #e8e8e8;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;         
+}
+
+
+.table td.center, .table th.center {
+    text-align: center;
+}
+
+table.table-content-center td, table.table-content-center th{text-align: center;}
+
+ 
+dl dt {
+	float:left;
+	background:#5f9be3;
+	color:#fff;
+		
+   margin-right:10px; 
+	padding:8px;
+	width:100px;
+		            
+   font-weight:bold;           
+   text-align: right;
+}
+ 
+dl dd {
+    border-bottom: 1px dotted #5f9be3;
+}
+
+.pagination-info {
+   color: #6e6e6e;  
+   text-shadow: 1px 1px 0px #eee;
+   font-weight: 600;
+}
+
+#right header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;		
+    border-bottom: 1px solid #DEDEDE;
+}
+
+#right header > h2 {
+	display: inline-block;
+}

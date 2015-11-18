@@ -48,6 +48,7 @@
 /target/work/plugins/*
 !/target/work/plugins/nimble-0.7/*
 
+
 # /target/**/*
 # !/target/**/nimble-0.7/
 

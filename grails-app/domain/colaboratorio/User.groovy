@@ -76,7 +76,7 @@ class User extends grails.plugin.nimble.core.UserBase {
 	}
 	
 	def skipTask(Task task) {
-		
+		this.skippedRecom.add(task)
 	}
 	
 

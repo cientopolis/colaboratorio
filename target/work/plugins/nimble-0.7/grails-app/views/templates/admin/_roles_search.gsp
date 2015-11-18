@@ -1,0 +1,40 @@
+<g:if test="${roles?.size() > 0}">
+   <table class="table table-striped">
+      <thead>
+         <tr>
+            <th>
+               <g:message code="bfcrowd.label.admin.user.show.roles.name" />
+            </th>
+            <th>
+               <g:message code="bfcrowd.label.admin.user.show.roles.description" />
+            </th>
+            <th></th>
+         </tr>
+      </thead>
+      <tbody>
+         <g:each in="${roles}" status="i" var="role">
+            <tr>
+               <td>${role.name?.encodeAsHTML()}</td>
+               <td>${role.description?.encodeAsHTML()}</td>
+               <td>
+                  <g:link controller="role" action="show" id="${role.id.encodeAsHTML()}" class="btn btn-info btn-mini">
+                     <i class="icon-user icon-white"></i>
+                     <g:message code="bfcrowd.label.admin.user.show.roles.view" />
+                  </g:link>
+                  <a onClick="grantRole('${ownerID.encodeAsHTML()}', '${role.id.encodeAsHTML()}');" class="btn btn-success btn-mini">
+                     <i class="icon-question-sign icon-white"></i>
+                     <g:message code="bfcrowd.label.admin.user.show.roles.assign" />
+                  </a>
+               </td>
+            </tr>
+         </g:each>
+      </tbody>
+   </table>
+</g:if>
+<g:else>
+   <p>
+      <strong>
+         <g:message code="bfcrowd.label.admin.user.show.roles.add.noresults" />
+      </strong>
+   </p>
+</g:else>
